@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="java.js" defer></script>
+   
+</head>
+
+<body>
+    <header class="start">
+        <a href="#main" class="skip">Skip to main content</a>
+
+    
+        <p>M2</p>
+
+
+        <ul class="upper">
+            <li> <a href="index.html">HEM</a></li>
+            <li> <a href="#">GRUNDERNA</a></li>
+            <li><a href="#">GENVÄGAR</a></li>
+            <li><a href="">OM</a></li>
+            <li><a href="history.html">HISTORIA</a></li>
+            <li><a href="#">DOM</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+
+       
+    </header>
+
+
+    <main class="center_space">
+        <section> 
+            <h2>FOLMULÄR</h2>
+            <p class="copy"> Fyll i för att ta kontakt med oss</p>
+
+
+            <form action="https://formsubmit.co/anastasiia.denesiuk@elev.ga.ntig.se" method="POST" >
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact.html">
+                
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="Name" placeholder="Fullständig namn" required>
+
+                <label for="email">E-mejl</label>
+                <input type="email" id="email" name="E-mail" placeholder="Rätt E-mail" required>
+
+              
+                
+                <label for="massage">Meddelande</label>
+                <textarea id="massage" placeholder="Meddelande"></textarea>
+
+            
+                <div class="form-flex-layout">
+                  <input class="btn-cta" type="submit" value="Skicka"> 
+                  <input class="btn-cta" type="reset" value="Återställ">        
+                </div>
+            </form>
+        </section>
+      
+
+
+    </main>
+</body>
+
+</html>

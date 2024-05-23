@@ -1,0 +1,198 @@
+* {
+  box-sizing:border-box;
+}
+.upper{
+ 
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+main{
+  max-width: 60%;
+  margin-inline: auto;
+}
+
+
+a:active{
+color: lightsalmon;
+}
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    background-image:linear-gradient( lightsalmon, #ffffff);
+    color:rebeccapurple;
+  
+    z-index: 1;
+} 
+
+
+ a{
+    
+    margin-inline: 1rem;
+    color:rebeccapurple;
+    text-decoration:none;
+ }
+
+
+
+
+.menu{
+ margin-top: 2rem;
+ background-image: linear-gradient(lightsalmon,#f3f9a7);
+ align-self:flex-start;
+
+}
+
+.control{
+    display: flex;
+    gap:2rem;
+    
+    max-width: auto;
+   
+}
+
+li{
+  margin-top: 1rem;
+  list-style-type:none;
+}
+.grid-rows{
+ 
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  
+
+}
+
+.grid-rows:nth-child(even){
+  background-color: lightsalmon;
+}
+
+.grid-rows:nth-child(odd) {
+  background-color:none;
+}
+
+
+
+
+h5{
+  background-color:salmon;
+}
+
+.skip{
+  background:#806f98;
+ color: white;
+  left: 1rem;
+  padding: 1rem;
+  position: absolute;
+  transform: translateY(-1000%);
+  transition: transform 0.25s ease-in;
+
+}
+
+.skip:focus {
+  transform: translateY(0%);
+   
+}
+
+
+.holder{
+  column-gap: 4rem;
+  columns:2;
+  
+
+ 
+  /* background-image: linear-gradient(to bottom, lightgoldenrodyellow,	#FDFD96, lightgoldenrodyellow 11%, transparent 14%);
+  color: black;
+  box-shadow:0px 5px 300px 5px lightgoldenrodyellow; 
+   */
+}
+
+.hamburger-button {
+  all: unset;
+  display: none;
+  place-items: center;
+ 
+} 
+
+@media (width < 480px){
+  .upper {
+    position: fixed;
+    top: 0;
+    inset: 0;
+
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+    
+    padding: 4rem 2rem;
+    
+    background: darkgray;
+    opacity: 0;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out,
+                opacity 250ms ease-in-out;
+}
+
+.primary-navigation.open {
+  transform: translateX(0);
+  opacity: 1;
+
+}
+
+
+
+  
+
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

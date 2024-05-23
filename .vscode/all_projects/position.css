@@ -1,0 +1,38 @@
+
+
+h1 {
+    position: relative;
+    left: 10px;
+}
+
+.parent{
+background-color: #fff;
+top: 0;
+
+}
+.a{
+    
+position: sticky;
+background-color: #000000;
+color: skyblue;
+
+
+}
+.b{
+    position: sticky;
+background-color: black;
+color:skyblue;
+
+}
+.c{
+background-color: black;
+color: skyblue;
+position: sticky;
+
+
+}
+body{
+   position: sticky;
+   top: 0;
+  
+}
