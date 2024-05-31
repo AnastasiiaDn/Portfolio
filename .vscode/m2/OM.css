@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box; 
+}
+
+body{
+    background-color: azure;
+}
+
+.about
+{
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin-inline: 2rem;
+margin-top: 2rem;
+
+
+
+}

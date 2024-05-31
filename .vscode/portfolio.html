@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <script  src="script_b.js" defer></script>
+  
+
+
+  
+</head>
+
+<body>
+  <header>
+    <div class="flex-layout">
+      <img class="logo" src="img.logo.png" alt="logo">
+      <p class="logo-brand"></p>
+  </div>
+  <nav>
+      <ul class="primary-navigation" id="primary-navigation">
+          <li><a class="nav-link" href="m2/hem.html">Hem</a></li>
+          <!-- dropdown-meny skapas med dropdown-klass -->
+          <li class="dropdown">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <ul class="primary-navigation" id="primary-navigation">
+                  <li><a class="nav-link" href="portfolio.html">Visa Allt</a></li>
+                  <li><a class="nav-link" href="all_projects/upg1.html">Projekt 1</a></li>
+                  <li><a class="nav-link" href="all_projects/upg2.html">Projekt 2</a></li>
+                  <li><a class="nav-link" href="all_projects/upg3.html">Projekt 3</a></li>
+                  <li><a class="nav-link" href="all_projects/index4.html">Projekt 4</a></li>
+                  <li><a class="nav-link" href="all_projects/sticky.html">Projekt 5</a></li>
+                  <li><a class="nav-link" href="m2/index.html">Projekt 6</a></li>
+                  <!--undermeny-->
+                  <li class="dropdown">
+                      <a class="nav-link" href="m2/index.html">M2</a>
+                      <ul class="primary-navigation" id="primary-navigation">
+                          <li><a class="nav-link" href="m2/history.html">Historia</a></li>
+                          <li><a class="nav-link" href="m2/DOM.html">DOM</a></li>
+                          <li><a class="nav-link" href="m2/contact.html">Kontakter</a></li>
+                      </ul>
+                  </li> 
+              </ul>
+          </li>
+          
+          <li><a class="nav-link" href="m2/OM.HTML">Om</a></li>
+      </ul>
+
+
+      <button class="hamburger-button" id="hamburger-button" aria-label="hamburger-button" aria-expanded="false">
+        <svg fill="black" class="icon-hamburger" viewBox="0 0 100 100" width="32">
+            <rect class="line top" width="90" height="10" x="10" y="20" rx="5"></rect>
+            <rect class="line middle" width="90" height="10" x="10" y="45" rx="5"></rect>
+            <rect class="line bottom" width="90" height="10" x="10" y="70" rx="5"></all_projectsrect>
+        </svg>
+      </button>
+
+
+  </nav>
+   
+</header>
+  
+    <section>
+      <h1>PORTFOLIO</h1>
+
+
+      <button class="portfolio-button">
+      <a href= "all_projects/upg1.html"  target="_blank">
+      <h2>Projekt 1</h2>
+      <p> Min första arbete med html.</p> </a>
+      <img src="upg11.png" alt=""></button>
+
+
+      <button class="portfolio-button">
+      <a href="all_projects/upg2.html"  target="_blank" >
+      <h2>Projekt 2</h2>
+      <p>Detta handlar om Div och Img.</p></a>
+      <img src="upg2.jpg" alt=""></button>
+
+
+
+      <button class="portfolio-button">
+      <div><a href="all_projects/upg3.html"  target="_blank" >
+        <h2>Projekt 3</h2>
+        <p>Detta handlar om Flex och Grid.</p>
+      </a></div><img src="upg3.png" alt=""></button>
+
+      <button class="portfolio-button">
+
+      <div><a href="all_projects/index4.html"  target="_blank" >
+        <h2>Projekt 4</h2>
+        <p>Detta uppgiften handlar om animation</p>
+      </a></div> <img src="upg444.jpg" alt=""></button>
+
+      <button class="portfolio-button">
+      <div><a href="all_projects/sticky.html"  target="_blank" >
+        <h2>Projekt 5</h2>
+        <p>Detta uppgiften handlar om position</p>
+      </a></div> <img src="upp_sticky.jpg" alt=""></button>
+
+      <button class="portfolio-button">
+      <div><a href="m2/index.html"  target="_blank" >
+        <h2>Projekt 6</h2>
+        <p>Detta handlar om element och egenskaper 
+        </p>
+      </a></div> <img src="upg6.png" alt=""></button>
+
+    </section>
+  
+
+    
+</body>
+
+</html>

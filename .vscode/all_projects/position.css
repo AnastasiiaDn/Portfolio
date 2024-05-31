@@ -1,4 +1,7 @@
-
+* {
+    
+    box-sizing: border-box;
+}
 
 h1 {
     position: relative;
@@ -6,33 +9,48 @@ h1 {
 }
 
 .parent{
-background-color: #fff;
-top: 0;
+background-color:azure;
+
+
 
 }
 .a{
     
 position: sticky;
+top: 0;
+left: 0;
+width: 100%;
+padding: 1px;
 background-color: #000000;
 color: skyblue;
-
+border-bottom: 1px solid #ccc ;
 
 }
 .b{
-    position: sticky;
-background-color: black;
+position: sticky;
+top: 0;
+left: 0;
+width: 100%;
+padding: 1px;
+background-color: black;    
 color:skyblue;
+border-bottom: 1px solid #ccc ;
 
 }
 .c{
+position:sticky;
+top: 0;
+left: 0;
+width: 100%;
+padding: 1px;
 background-color: black;
 color: skyblue;
 position: sticky;
-
+border-bottom: 1px solid #ccc ;
 
 }
 body{
-   position: sticky;
+  
    top: 0;
   
 }

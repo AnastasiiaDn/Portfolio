@@ -3,11 +3,11 @@
   --clr-black: green;                    /* totalt svart används sparsamt */
   
   --clr-primary: hsl(0, 0%, 96%);       /* bakgrundsfärg och primära färgen */
-  --clr-secondary: rebeccapurple;       /* menyfärg */
-  --clr-accent: orchid;                 /* highlight CTA-färg  */
+  --clr-secondary:lightgoldenrodyellow;       /* menyfärg */
+  --clr-accent: black;                 /* highlight CTA-färg  */
   
   --clr-white: hsl(0, 0%, 99%);   
-  --clr-dropdown-background: white;      /* dropdown-menyns bakgrund */
+  --clr-dropdown-background: green;      /* dropdown-menyns bakgrund */
   
   --clr-hover: hsl(270, 38%, 87%);           /* hover färg */
   --clr-active: var(--clr-secondary);          /* färg man klickar */
@@ -35,7 +35,7 @@ body {
   background-color: #eee;
   margin: 0;
   padding: 0;
-  background-color: hsl(0, 0%, 96) ;
+  background-color:azure ;
   min-height: 100vh;
 }
 
@@ -43,10 +43,10 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color:lightgreen;
   top: 0;
   position: sticky;
-  color: beige;
+  color:azure;
   padding: 20px 6px;
   text-align: left;
 }
@@ -85,12 +85,16 @@ main {
 
 .logo {
   max-inline-size: 10%;
+  filter: brightness(20%);
   
 }
 
 
 /* text styling */
 p {
+
+  display: flex;
+  margin-inline: 1rem;
   color: var(--clr-copy);
 }
 
@@ -180,21 +184,13 @@ li .dropdown::after {
 
   } */
 
-button {
-  background-color: lightgreen;
-  border: none;
-  color:white;
+
   
-  text-decoration: none;
-  display: inline;
-  transition-duration: 0.5s;
-  
- 
-}
 
   .portfolio-button{
     display:flex;
     justify-content:space-between;
+   
     margin-inline: auto;
     width: 60%;
     margin-block: 2rem;
@@ -203,18 +199,24 @@ button {
     border: 4px solid lightgreen;
     border-radius: 5px;
     box-shadow: green 5px 5px ;
+    transition-duration: 0.5s;
   }
 
   .portfolio-button:hover{
     background-color:lightgreen;
     color: white;
   }
+
+  .portfolio-button img {
+    align-self:first baseline; 
+    overflow: hidden;
+
+    max-width: 100%;
+    height: auto;
+  }
   
 
-  img {
-    border-radius: 20px;
-    filter:opacity(90%);
-  }
+  
 
   .buttom-text{
     display: grid;
@@ -228,6 +230,52 @@ a {
 h1{
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
+h2{
+  display: flex;
+  margin-inline: 1rem;
+}
+  
+.hamburger-button {
+  display: none;
+}
+
+
+@media (max-width: 480px) {
+  .primary-navigation {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%; /* eller en specifik bredd, beroende på önskad menybredd */
+      height: 100vh;
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      transform: translateX(100%); /* Starta från höger */
+      transition: transform 250ms ease-in-out;
+  }
+
+  .primary-navigation.open {
+      display: flex;
+      transform: translateX(0);
+  }
+
+  .hamburger-button {
+      display: block;
+      position: fixed;
+      top: 10px;
+      right: 10px; /* Knappen flyttas till höger sida */
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1000;
+  }
+}
+
+
+
+
+ 
 

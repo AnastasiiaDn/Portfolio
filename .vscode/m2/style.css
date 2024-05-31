@@ -4,8 +4,15 @@
 .upper{
  
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
 }
+
+.logo {
+  max-inline-size: 5%;
+  filter: brightness(30%);
+  
+}
+
 
 
 
@@ -32,10 +39,10 @@ header {
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     background-image:linear-gradient( lightsalmon, #ffffff);
     color:rebeccapurple;
-  
+   
     z-index: 1;
 } 
 
@@ -89,7 +96,7 @@ li{
 
 
 
-h5{
+h2  {
   background-color:salmon;
 }
 

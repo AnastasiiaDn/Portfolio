@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+section
+{
+   display: grid;
+   grid-template-columns:1fr;
+    margin-inline: 2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+   
+    /* max-width: 70%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 4rem;
+margin-inline: 3rem; */
+
+    
+}
+
+

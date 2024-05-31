@@ -1,0 +1,25 @@
+*{
+    
+    box-sizing: border-box;
+}
+
+body{
+    background-color: azure;
+}
+
+
+
+
+.main_section{
+ display: grid;
+ grid-template-columns: 1fr 2fr ;
+ margin-inline: 3rem;
+ gap: 2rem;
+ max-width: 60%;
+ margin-top: 2rem;
+}
+
+.img1{
+    max-inline-size: 100%;
+    box-shadow: 6px 6px 9px red;
+}
